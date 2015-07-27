@@ -7,6 +7,8 @@ import data.{Point, BezierCurve}
  */
 object Calculator {
 
+
+
   def calculatorQuadraticBezierCurve(point0: Point, point1: Point, point2: Point): BezierCurve = {
     val bezierCurve = new BezierCurve();
 
@@ -51,5 +53,9 @@ object Calculator {
     }
 
     return bezierCurve;
+  }
+
+  def calculateCubicBezierCurveWithOffset(f: Tuple2[Int, Int] => Point, point0: Tuple2[Int, Int], point1: Tuple2[Int, Int], point2: Tuple2[Int, Int], point3: Tuple2[Int, Int]): BezierCurve = {
+    calculateCubicBezierCurve(f(point0), f(point1), f(point2), f(point3));
   }
 }
