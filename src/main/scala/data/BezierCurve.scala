@@ -11,6 +11,5 @@ class BezierCurve {
 
   def addPointOnCurve(point: Point): ListBuffer[Point] = {
     pointList += point;
-    return pointList;
   }
 }

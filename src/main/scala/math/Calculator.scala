@@ -47,6 +47,7 @@ object Calculator {
       val Y: Int = ((p0ValY * Math.pow((1 - tVal), 3)) + (p1ValY * 3 * Math.pow((1 - tVal), 2) * tVal) + (p2ValY * 3 * (1 - tVal) * Math.pow(tVal, 2)) + (p3ValY * Math.pow(tVal, 3))).toInt;
 
       println("Generated point, (" + X + ", " + Y + ")");
+      bezierCurve.addPointOnCurve(new Point(X, Y));
     }
 
     return bezierCurve;

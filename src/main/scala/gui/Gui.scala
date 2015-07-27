@@ -5,8 +5,6 @@ import scala.swing._
 /**
  * Created by nchampagne on 7/27/15.
  */
-class Gui
-
 object Gui extends MainFrame {
 
   title = "Test Title";
