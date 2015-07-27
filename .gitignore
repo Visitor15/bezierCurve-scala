@@ -7,5 +7,7 @@ target/*
 .idea/*
 lib
 lib/*
+target
+taget/*
 nbactions.xml
 nb-configuration.xml
