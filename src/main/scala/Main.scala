@@ -18,6 +18,10 @@ object Main {
 
     // Closure test
     val offsetBezierCurve = Calculator.calculateCubicBezierCurveWithOffset(createPointWithOffset, (2, 2), (2, 4), (2, 6), (2, 8));
+
+    // Partial function w/ closure
+    val partialOffsetBezierCurveFunc = Calculator.calculateCubicBezierCurveWithOffset(_: Tuple2[Int, Int] => Point, (2, 2), (2, 4), (2, 6), _: Tuple2[Int, Int]);
+    val calculatedOffsetBezierCurve = partialOffsetBezierCurveFunc(createPointWithOffset, (100, 100));
   }
 
   def createPointWithOffset(point: Tuple2[Int, Int]): Point = {
