@@ -1,0 +1,11 @@
+atlassian-ide-plugin.xml
+target/*
+*.iml
+.idea
+.idea/
+.DS_Store
+.idea/*
+lib
+lib/*
+nbactions.xml
+nb-configuration.xml
